@@ -12,7 +12,8 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.facebook.CallbackManager;
-
+import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
+import io.invertase.firebase.notifications.RNFirebaseNotificationsPackage;
 import java.util.Arrays;
 import java.util.List;
 
@@ -37,6 +38,8 @@ public class MainApplication extends Application implements ReactApplication {
           new RNGoogleSigninPackage(),
           new RNFirebasePackage(),
           new RNFirebaseAuthPackage(),
+          new RNFirebaseMessagingPackage(),
+          new RNFirebaseNotificationsPackage(),
           new FBSDKPackage(mCallbackManager)
       );
     }
